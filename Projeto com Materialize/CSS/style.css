@@ -1,0 +1,62 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.sect1 {
+    position: relative;
+    min-height: 500px;
+}
+
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 15px 2%;
+    width: 100%;
+    max-width: 960px;
+}
+
+.custom-title {
+    position: relative;
+}
+
+.custom-title h2 {
+    position: relative;
+    font-size: 30px;
+    color: black;
+    z-index: 2;
+    display: inline-block;
+    background-color: white;
+    padding-right: 20px;
+}
+
+.custom-title > div {
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    z-index: 1;
+    background-color: #777;
+    left: 0;
+    top: 50px;
+}
+
+.backImage {
+    position: relative;
+}
+
+.centralizar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formatText {
+    text-shadow: 2px 2px 20px #000;
+}
