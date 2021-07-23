@@ -1,0 +1,133 @@
+div.banner {
+    text-align: center;
+}
+
+div.nav-wrapper > a > i {
+    font-size: 50px;
+}
+
+div.banner {
+    width: 100%;
+    min-height: 700px;
+    background-color: green;
+    background-image: url(../Imagens/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+div.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.text-format {
+    color: white;
+    text-align: left;
+}
+
+.text-menu {
+    max-width: 900px;
+}
+
+.text-format > a {
+    display: block;
+    color: white;
+    width: 100px;
+    padding: 10px 0;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #2D63FA;
+}
+
+.btn-animate  {
+    transition: 1s;
+}
+
+.text-format a:hover {
+    box-shadow: 1px -1px 110px 7px rgba(45,99,250,1);
+    -webkit-box-shadow: 1px -1px 110px 7px rgba(45,99,250,1);
+    -moz-box-shadow: 1px -1px 110px 7px rgba(45,99,250,1);
+}
+
+.icon-format > h1 {
+    color: white;
+    font-size: 200px;
+}
+
+.fix-zindex {
+    z-index: 2;
+    position: relative;
+}
+
+.central {
+    display: inline-block;
+    margin-top: 130px;
+}
+
+.custom-t {
+    position: relative;
+}
+
+.custom-t > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 4px;
+    transition: 1s;
+    background: #2D63FA;
+}
+
+.custom-t > div:hover {
+    width: 325px;
+}
+
+.icon-f {
+    font-size: 70px;
+}
+
+.title-format {
+    margin: 0px; 
+    margin-bottom: 70px;
+    background-color: #29b6f6; 
+    padding: 20px; 
+    color: white;
+}
+
+.image-format{
+    width: 100%;
+    height: 960px;
+    background-image: url(../Imagens/pessoa.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 768px){
+    .text-format {
+        text-align: center;
+    }
+    .text-format > a {
+        margin: 20px auto;
+    }
+
+    .icon-format > h1 {
+        display: none;
+    }
+
+    .central {
+        margin-top: 180px;
+    }
+
+}

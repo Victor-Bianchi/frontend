@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*ICSS*/
+
+header {
+    background-color: hotpink;
+}
+
+div.clear {
+    clear: both;
+}
+
+div.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+div.container>img {
+    float: left;
+    margin: 28px;
+}
+
+nav ul {
+    padding-top: 65px;
+}
+
+nav ul li {
+    float: right;
+    text-decoration: none;
+    margin-right: 25px;
+    list-style-type: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+}
+
+section.txt-left {
+    width: 70%;
+    max-width: 800px;
+    margin-top: 130px;
+}
+
+section.txt-left h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+section.txt-left p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+section.txt-left button {
+    border: 0;
+    outline: 0;
+    background-color: #017143;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+section.right>div.circle {
+    position: absolute;
+    top: 180px;
+    right: -500px;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 600px;
+    background-color: #017143;
+}
+
+section.right>img {
+    position: absolute;
+    top: 190px;
+    right: 300px;
+}
+
+div.icons {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+div.icons img {
+    margin-bottom: 20px;
+}
+
+/**/

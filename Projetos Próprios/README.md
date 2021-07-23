@@ -1,0 +1,2 @@
+# Meus Projetos
+Neste repositório ficarão os meus projetos práticos. De inspiração minha e de direitos autorais meus, se você está tendo acesso a este conteúdo, você tem o direito de usar estes templates exclusivamente para **estudo**. **NÃO** utilize para meios comerciais ou de interesse próprio.
