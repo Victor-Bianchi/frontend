@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+html, body {
+    height: 100%;
+}
+
+/*Classes Auxiliares*/
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/****/
+
+/*Início Custom CSS*/
+
+section.superHeader {
+    width: 100%;
+    padding: 30px 0;
+    min-height: 700px;
+    background-image: url(../Imagens/bg_01.png);
+    background-size: cover;
+    background-position: center;
+}
+
+div.logo {
+    float: left;
+    width: 166px;
+    height: 64px;
+    background-image: url(../Imagens/logo.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+header nav {
+    float: left;
+    padding-left: 60px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+div.telephone {
+    position: relative;
+    top: -8px;
+    /*8px*/
+    float: left;
+}
+
+div.telephone span {
+    color: white;
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+.selected {
+    color: #509d87;
+}
+
+.trace {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #509d87;
+    width: 40px;
+    height: 4px;
+    border-radius: 20px;
+}
+
+/****/
+
+/*Media Screen Section*/
+
+/****/
