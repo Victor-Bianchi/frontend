@@ -26,13 +26,17 @@ html, body {
 
 /*Início Custom CSS*/
 
-section.superHeader {
+section.header-master {
     width: 100%;
     padding: 30px 0;
-    min-height: 700px;
+    min-height: 900px;
     background-image: url(../Imagens/bg_01.png);
     background-size: cover;
-    background-position: center;
+}
+
+section.header-master header {
+    border-bottom: 3px solid rgba(71, 83, 88, 0.14);
+    padding-bottom: 30px; /*20px*/
 }
 
 div.logo {
@@ -41,7 +45,6 @@ div.logo {
     height: 64px;
     background-image: url(../Imagens/logo.png);
     background-size: 100% 100%;
-    background-position: center;
 }
 
 header nav {
@@ -53,47 +56,271 @@ header nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
-    position: relative;
-    float: left;
+header li {
+    display: inline-block;
     font-size: 16px;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    text-decoration: none;
     color: white;
-}
-
-div.telephone {
+    margin: 0 15px; /*padding: 0 15px*/
     position: relative;
-    top: -8px;
-    /*8px*/
+}
+
+header li > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div.telefone-header {
     float: left;
+    position: relative;
+    top: -5px; /*-8px*/
 }
 
-div.telephone span {
+div.telefone-header span {
+    font-size: 20px; /*25px*/
     color: white;
-    padding-left: 30px;
-    font-size: 25px;
+    padding-left: 20px;
 }
 
-.selected {
+li.selected {
     color: #509d87;
 }
 
-.trace {
+li.selected > span {
     position: absolute;
-    bottom: -5px;
-    left: 0;
-    background-color: #509d87;
-    width: 40px;
-    height: 4px;
-    border-radius: 20px;
+    bottom: 0;
+    left: 1px;
+    width: 20px;
+    height: 3px;
+    background-color: teal;
+}
+
+div.content-header {
+    padding: 70px 0;
+}
+
+div.content-header .one {
+    width: 50%;
+    float: left;
+}
+
+div.content-header .one h2 {
+    color: #509d87;
+    font-weight: normal;
+    font-size: 37px;
+}
+
+div.content-header .one p, div.content-header .one span {
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+div.content-header .one form input {
+    display: inline-block;
+}
+
+div.content-header .one form input[type="email"]{
+    width: 251px;
+    height: 60px;
+    border: 0;
+    border-radius: 60px;
+    padding-left: 10px;
+}
+
+div.content-header .one form input[type="email"]:focus {
+    outline: none;
+}
+
+div.content-header .one form input[type="submit"] {
+    background-color: #00daaa;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    padding: 10px 30px;
+    height: 60px;
+    border-radius: 60px;
+    font-size: 15px;
+}
+
+div.content-header .one span {
+    display: block;
+    font-size: 14px;
+}
+
+div.content-header .two {
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+}
+
+div.content-header .two img {
+    float: left;
+    width: 50%;
+    padding: 10px 10px;
+}
+
+/*Diferenciais*/
+
+section.diferenciais{
+   padding: 40px 0; 
+}
+
+div.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.diferencial-single {
+    width: 33.3%;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+div.diferencial-single img {
+    max-width: 100%;
+}
+
+div.diferencial-single h2 {
+    color: black;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+div.diferencial-single:nth-of-type(1) h2{
+    margin: 25px 0;
+} /*Extra, alinhamento*/
+
+div.diferencial-single h2 > b {
+    color: #7dd5b0;
+}
+
+div.diferencial-single p {
+    color: #2d2d2d;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/**/
+
+/*Sobre*/
+
+section.sobre > .container {
+    max-width: 1440px;
+}
+
+div.sobre1 {
+    width: 50%;
+    float: left;
+}
+
+div.sobre1 img {
+    max-width: 100%;
+}
+
+div.sobre2 {
+    width: 50%;
+    float: left;
+}
+
+div.sobre2 h2 {
+    font-size: 33px;
+    margin-bottom:20px;
+    color: #a9c4b8;
+    font-weight: normal;
+}
+
+div.sobre2 h2 > b {
+    color: #7dd5b0;
+}
+
+div.sobre2 p {
+    color: black;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+div.pad {
+    padding: 0 30px;
+}
+
+/**/
+
+section.depoimento {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-image: url(../Imagens/bg_02.png);
+    background-size: cover;
+    position: relative;
+    bottom: 120px;
+}
+
+section.depoimento h2 {
+    text-align: center;
+    font-size: 29px;
+    font-weight: normal;
+    color: #2d2d2d;
+}
+
+section.depoimento p {
+    text-align: center;
+    margin: 10px 0;
 }
 
 /****/
 
 /*Media Screen Section*/
+
+@media screen and (max-width: 768px) {
+    div.content-header .two {
+        display: none;
+    }
+
+    div.content-header .one {
+        float: none;
+        width: 100%;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    nav.desktop{
+        display: none;
+    }
+
+    div.diferencial-single {
+        width: 100%;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    div.diferencial-single p {
+        text-align: center;
+    }
+
+    div.diferencial-single:nth-of-type(1) h2{
+        margin: 10px 0;
+    } /*Extra, alinhamento*/
+
+    div.sobre1, div.sobre2 {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+        float: none;
+    }
+
+    section.depoimento {
+        padding-top: 300px;
+        padding-bottom: 300px;
+        background-image: url(../Imagens/bg_02.png);
+        background-size: cover;
+        position: initial;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    div.telefone-header {
+        display: none;
+    }
+}
 
 /****/
