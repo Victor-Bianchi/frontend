@@ -1,0 +1,125 @@
+/*General Class*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/*Init CSS*/
+
+/*Header CSS*/
+
+header {
+    min-height: 600px;
+    padding: 30px 0;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 132px;
+    height: 20px;
+    background-image: url(../images/logo.png);
+    background-size: 100% 100%;
+}
+
+/*DESKTOP MENU*/
+
+nav.desktop {
+    position: relative; /*Extra*/
+    bottom: 20px; /*Extra*/
+    float: right;
+}
+
+nav.desktop ul {
+    list-style-type: none;
+}
+
+nav.desktop li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav.desktop a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.desktop li.btn-nav {
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 8px;
+    border: 2px solid white;
+    text-transform: uppercase; /*Extra, semelhante ao Design*/
+}
+
+/*CHAMADA HEADER*/
+
+div.chamada-menu {
+    padding: 110px 0;
+}
+
+div.chamada-menu h2 {
+    font-size: 47px;
+    color: white;
+    font-weight: normal ;
+}
+
+div.chamada-menu p {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    max-width: 500px; /*600px*/
+}
+
+div.chamada-menu input[type="email"]{
+    display: inline-block;
+    width: 237px;
+    height: 35px;
+    border: 0;
+    border-radius: 20px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+div.chamada-menu input[type="email"]:focus {
+    outline: 0;
+}
+
+div.chamada-menu form {
+    margin-top: 20px;
+}
+
+div.chamada-menu input[type="submit"]{
+    width: 181px;
+    height: 43px;
+    border-radius: 100px;
+    color: white;
+    border: 0;
+    background-color: #ff5f27;
+}
+
+
+/****/
+
+/*Media Screan Section*/
+
+/**/
