@@ -11,6 +11,10 @@ html, body {
     height: 100%;
 }
 
+body {
+    background-color: rgba(240, 240, 240, 1);
+}
+
 .clear {
     clear: both;
 }
@@ -27,7 +31,7 @@ html, body {
 /*Header CSS*/
 
 header {
-    min-height: 600px;
+    min-height: 450px;
     padding: 30px 0;
     background-image: url(../images/bg.jpg);
     background-size: cover;
@@ -35,6 +39,8 @@ header {
 }
 
 .logo {
+    position: relative;
+    z-index: 2;
     width: 132px;
     height: 20px;
     background-image: url(../images/logo.png);
@@ -63,12 +69,53 @@ nav.desktop a {
     color: white;
 }
 
-nav.desktop li.btn-nav {
+nav li.btn-nav {
     cursor: pointer;
     padding: 3px 8px;
     border-radius: 8px;
     border: 2px solid white;
     text-transform: uppercase; /*Extra, semelhante ao Design*/
+}
+
+/*DESKTOP MENU*/
+
+nav.mobile {
+    display: none;
+    float: right;
+}
+
+nav.mobile h3 {
+    position: relative;
+    bottom: 23px;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    z-index: 2;
+}
+
+nav.mobile ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    display: none;
+    text-align: center;
+    background-color: #31475e;
+}
+
+nav.mobile li {
+    padding: 10px 0;
+}
+
+nav.mobile li.btn-nav {
+    padding: 3px 10px;
+    display: inline-block;
+}
+
+nav.mobile a {
+    color: white;
+    text-decoration: none;
 }
 
 /*CHAMADA HEADER*/
@@ -117,9 +164,365 @@ div.chamada-menu input[type="submit"]{
     background-color: #ff5f27;
 }
 
+/*DESCRIÇÃO DANKI*/
+
+section.desc-danki {
+    text-align: center;
+    padding: 30px 0;
+}
+
+section.desc-danki p {
+    display: inline-block;
+    max-width: 650px;
+    font-weight: lighter;
+    font-size: 22px;
+    font-style: italic;
+}
+
+/*DESCRIÇÃO DANKI 2*/
+
+section.desc-danki2 {
+    padding: 50px 0;
+}
+
+section.desc-danki2 .container {
+    max-width: 960px;
+}
+
+div.txt-desc {
+    padding: 0 15px;
+    float: left;
+    width: 50%; /*40%*/
+}
+
+.txt-desc h3 {
+    color: #31475e;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.txt-desc p {
+    color: #6a7c92;
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+
+section.desc-danki2 img {
+    float: left;
+    width: 50%; /*Extra*/
+    max-width: 100%;
+}
+
+/*DESCRIÇÃO DANKI 3*/
+
+section.desc-danki3 {
+    padding: 30px 0 60px 0;
+}
+
+section.desc-danki3 > .container {
+    max-width: 960px;
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+    min-height: 350px;
+    position: relative;
+}
+
+div.box-depo {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    width: 70%;
+    max-width: 506px;
+    background-color: white;
+    padding: 10px 30px;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+}
+
+div.box-depo p {
+    font-size: 18px;
+    color: #31475e;
+    font-weight: lighter; /*Don't work, needs font 'Roboto Light'*/
+}
+
+/*SERVICOS*/
+
+section.servicos {
+    padding: 25px 0;
+}
+
+section.servicos > .container {
+    max-width: 1100px;
+}
+
+div.title-services {
+    text-align: center;
+}
+
+div.title-services h3 {
+    color: #31475e;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+div.flex-services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.box-service {
+    border: 10px solid rgb(240, 240, 240);
+    background-color: white;
+    width: 33.3%;
+    border-radius: 3px;
+    background-color: 0 8px 20px rgba(224, 224, 244, 0.5);
+}
+
+div.box-service img {
+    width: 100%;
+}
+
+div.box-service-wraper {
+    padding: 20px;
+}
+
+div.box-service-wraper h2 {
+    color: #31475e;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+div.box-service-wraper p {
+    font-weight: lighter;
+    color: #6a7c92;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+div.box-service-wraper a {
+    display: inline-block;
+    width: 120px;
+    border: 1px solid #6a7c92;
+    border-radius: 20px;
+    color: #6a7c92;
+    text-decoration: none;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+.empresas {
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.empresas-single {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: #ececec;
+    border-width: 1px 0 1px 1px;
+    width: 25%;
+    padding: 20px 0;
+   
+}
+
+.empresas .empresas-single:last-child{
+    border: 1px solid #ececec;
+}
+
+/*PORTFOLIO*/
+
+section.portfolio {
+    padding: 20px 0;
+    background-color: white;
+}
+
+section.portfolio h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #31475e;
+}
+
+section.portfolio > .container {
+    max-width: 960px;
+    padding: 15px 0;
+    background-color: #f7f7f7;
+}
+
+/*FORMULÁRIO DE CONTATO*/
+
+section.formulario {
+    padding: 30px 0;
+}
+
+section.formulario h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #31475e;
+}
+
+section.formulario form {
+    margin-top: 10px;
+}
+
+section.formulario .container {
+    max-width: 960px;
+}
+
+section.formulario input[type="text"]{
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #ebebeb;
+    margin-top: 8px;
+    padding-left: 10px;
+}
+
+section.formulario input[type="text"]:focus {
+    outline: 0;
+}
+
+section.formulario textarea {
+    width: 100%;
+    height: 120px;
+    max-height: 400px; /*Extra*/
+    resize: vertical;
+    border: 1px solid #ebebeb;
+    margin-top: 8px;
+    padding-left: 10px;
+}
+
+section.formulario input[type="submit"]{
+    width: 159px;
+    height: 38px;
+    color: white;
+    background-color: #ff5f27;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    cursor: pointer;
+    border: 0;
+    border-radius: 100px;
+}
+
+/*FOOTER*/
+
+footer {
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.box-footer {
+    float: left;
+    width: 33.3%;
+    padding: 0 15px;
+}
+
+.box-footer h2 {
+    color: #31475e;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.box-footer p {
+    margin-top: 10px;
+    color: #31475e;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.box-footer form {
+    margin-top: 10px;
+}
+
+.box-footer button {
+    width: 63px;
+    height: 43px;
+    border: 1px solid #31475e;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.box-footer i {
+    color: white  ;
+}
+
+.box-footer input[type="email"] {
+    width: 208px;
+    height: 43px;
+    border-radius: 100px;
+    background-color: #ffff;
+    border: 1px solid #bfbfbf;
+    outline: 0;
+    padding-left: 10px;
+}
 
 /****/
 
 /*Media Screan Section*/
+
+@media screen and (max-width: 1024px){
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: block;
+    }
+
+    div.chamada-menu {
+        text-align: center;
+    }
+
+    div.chamada-menu form input[type="submit"]{
+        display: block;
+        margin: 10px auto;
+    }
+
+    div.chamada-menu p {
+        display: inline-block;
+    }
+
+    div.box-depo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 70%;
+        transform: translate(-50%, -50%);
+        max-width: 506px;
+        min-height: 245px;
+        background-color: white;
+        padding: 10px 30px;
+        box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    div.txt-desc {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+
+    div.box-service {
+        width: 100%;
+    }
+
+    section.desc-danki2 img{
+        width: 100%;
+        float: none;
+        margin-top: 10px;
+    }
+
+    .empresas-single {
+        width: 100%;
+        max-width: 640px;
+        margin: 15px auto;
+        border: 1px solid #ececec;
+    }
+}
 
 /**/
