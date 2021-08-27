@@ -1,9 +1,8 @@
 const express = require('express');
-const bodyparser = require('body-parser');
-
 const app = express();
 
-app.listen('800', ()=>{
-    console.log("O Servidor foi Iniciado!")
-    console.log("NodeMon está em execução!")
+app.listen('3000', ()=> {
+    console.log("Servidor está no ar!");
+    console.log("O Nodemon está executando, salvando alterações...")
+    console.log("Hey!")
 })
