@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+/*General Classes*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html, body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+/*Init CSS*/
+
+body {
+    background-color: #faf9fc;
+}
+
+div.sidebar {
+    width: 300px; /*20%*/
+    height: 100%;
+    background-color: #2d3035;
+    max-width: 300px;
+    float: left;
+}
+
+div.topo {
+    background-color: #26282d;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+div.topo h3 {
+    color: white;
+}
+
+div.menu {
+    padding: 30px;
+    transition: 1s;
+}
+
+div.menu ul {
+    list-style-type: none;
+}
+
+div.menu li {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: #717171;
+}
+
+div.menu ul li a {
+    color: #717171;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+div.menu li:hover i {
+    color: #0275d4;
+    transition: 0.6s;
+    text-shadow: 0px 0px 2px #008cff;
+}
+
+div.menu li:hover a {
+    color: white;
+    transition: 0.6s;
+}
+
+/*FIM DA SIDEBAR*/
+
+div.main {
+    float: left;
+    width: calc(100% - 300px); /*Porque é 100% menos os 300px que é a largura da sidebar*/
+    height: 100%;
+}
+
+div.main header {
+    background-color: white;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+div.pesquisa {
+    float: right;
+}
+
+div.pesquisa .icone-pesquisa {
+    background-color: #0275d4;
+    padding: 7px;
+    color: #fff;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icone-pesquisa {
+    position: relative;
+    top: 2px;
+}
+
+.icone-pesquisa i {
+    position: relative;
+    bottom: 2px;
+}
+
+.pesquisa form {
+    display: inline-block;
+}
+
+.pesquisa input[type="text"] {
+    width: 200px;
+    height: 30px;
+    border-left: 0;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 16px;
+    outline: 0;
+}
+
+div.notify {
+    position: relative;
+    top: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: #fbedef;
+    text-align: center;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+div.notify .icone-notify {
+    padding-top: 6px;
+    color: #ed7387;
+}
+
+div.notify span {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 15px;
+    background-color: #ed7387;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+div.user {
+    position: relative;
+    top: 2px;
+    float: right;
+    margin-right: 30px;
+}
+
+div.user span {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 4px 20px; 
+}
+
+div.user i {
+    width: 30px;
+    height: 30px;
+    background-color: #0275d4;
+    text-align: center;
+    color: white;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+div.main h1 {
+    margin-top: 2px;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.chamada-1 {
+    width: 80%;
+    height: calc(100% - 90px);
+    float: left;
+    padding: 30px; 
+    overflow-y: auto;
+}
+
+.panel {
+    float: left;
+    width: 100%;
+    background-color: white;
+    border: 3px solid #ebebeb;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.panel h2 {
+    color: #7f7f7f;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.panel p {
+    color: #b2b2b2;
+    font-size: 17px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.chamada-2 {
+    float: left;
+    width: 20%;
+    background-color: #eaebeb;
+    height: calc(100% - 90px); /*Cálculo baseado no header*/
+    overflow-y: auto;
+    padding: 20px 40px;
+}
+
+.att-topo h2 {
+    color: #7f7f7f;
+    font-size: 23px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+.att-reg {
+    position: relative;
+    padding: 15px 10px;
+    border-left: 1px solid #bbb;
+}
+
+.att-reg h2 {
+    color: #bbb;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.att-reg p {
+    color: #b2b2b2;
+    font-size: 15px;
+}
+
+.circle-att {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: #eaebeb;
+}
+
+.menu {
+    font-size: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+/*Media Screen Section*/
+
+@media screen and (max-width: 768px) {
+
+    .chamada-2 {
+        display: none;
+    }
+
+    .chamada-1 {
+        width: 100%;
+    }
+
+    .sidebar {
+        display: none;
+        position: relative;
+        z-index: 99999;
+    }
+
+    div.main {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .panel {
+        width: 100% !important;
+    }
+
+    .user {
+        display: none;
+    }
+
+    div.main h1 {
+        display: none;
+    }
+
+    div.main {
+        width: 100%;
+    }
+}

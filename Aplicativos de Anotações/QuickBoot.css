@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); /*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap'); /*Roboto Monospaced*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap'); /*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap'); /*Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap'); /*Montserrat*/
+
+/* DOCUMENT RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GRID SYSTEM */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.w10 {width: 10%;}
+.w50 {width: 50%;}
+.w100 {width: 100%;}
+
+.w33-3 {width: 33.3%;}
+
+/* TEXT FORMAT */
+
+.txt-center {text-align: center;}
+.txt-left {text-align: left;}
+.txt-right {text-align: right;}
+.txt-justify {text-align: justify;}
+
+.txt-big {font-size: 36px;}
+.txt-middle {font-size: 20px;}
+.txt-small {font-size: 12px;}
+.txt-16 {font-size: 16px;}
+.txt-14 {font-size: 14px;}
+
+/* FONT COLORS */
+
+.c-blue {color: blue;}
+.c-red {color: red;}
+.c-yellow {color: yellow;}
+.c-green {color: green;}
+.c-white {color: white;}
+.c-black {color: black;}
+
+/* BACKGROUNDS COLORS */
+
+.b-blue {background-color: blue;}
+.b-blue {background-color: red;}
+.b-yellow {background-color: yellow;}
+.b-green {background-color: green;}
+.b-white {background-color: white;}
+.b-black {background-color: black;}
+
+/* STANDART HEADER */
+
+header .container {justify-content: space-between;}
+
+div.logo {font-size: 30px;}
+
+nav.desktop ul li {margin-left: 10px;}
+nav.desktop ul li a {text-decoration: none;}
+
+nav.desktop ul {
+    display: flex;
+    list-style-type: none;
+}
+
+
+
+   
