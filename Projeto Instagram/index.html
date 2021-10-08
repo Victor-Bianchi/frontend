@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div> <!-- logo -->
+            <div class="search">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input placeholder="Pesquisar" type="text" name="busca">
+                </div> <!-- search-box -->
+            </div> <!-- search -->
+            <div class="notifications-icons">
+                <a href="#"><i class="fas fa-home"></i></a>
+                <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                <a href="#"><i class="far fa-compass"></i></a>
+                <a href="#"><i class="far fa-heart"></i></a>
+                <div style="background-image: url(images/perfil.jpg);" class="img-miniature"></div>
+            </div> <!-- notifications-icons -->
+        </div> <!-- container -->
+    </header>
+
+    <section class="perfil-desc">
+        <div class="container">
+
+            <div class="img-perfil-wraper">
+                <div style="background-image: url(images/perfil.jpg);" class="img-perfil"></div>
+            </div>
+
+            <div class="txt-perfil">
+                <div class="nome-perfil">
+                    <span>guigrillo13</span>
+                    <a class="btn-primary" href="">Editar Perfil</a>
+                    <a class="icon" href=""><i class="fas fa-cogs"></i></a>
+                </div>
+            </div>
+
+            <div class="info-perfil">
+                <p><b>300</b> publicações</p>
+                <p><b>10 mi</b> Seguidores</p>
+                <p><b>321</b> Seguindo</p>
+            </div> <!-- info-perfil -->
+
+            <div class="bio">
+                <h3>Guilherme Grillo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aliquid error veritatis, sunt tempora
+                    deserunt impedit maiores sint dolorum commodi repellendus maxime</p>
+            </div>
+
+            <div class="clear"></div>
+
+        </div> <!-- container -->
+    </section> <!-- perfil-desc -->
+
+    <section class="feed">
+        <div class="container">
+            <div class="line-feed">
+                <div aba="publi" class="single-line-name">
+                    <div style="display: block;" class="line-marcacao"></div> <!-- line-marcacao -->
+                    <p style="font-weight: bold;">Publicações</p>
+
+                </div> <!-- single-line-name -->
+
+                <div aba="reels" class="single-line-name">
+                    <div class="line-marcacao"></div> <!-- line-marcacao -->
+                    <p>Reels</p>
+
+                </div> <!-- single-line-name -->
+
+                <div aba="videos" class="single-line-name">
+                    <div class="line-marcacao"></div> <!-- line-marcacao -->
+                    <p>Vídeos</p>
+
+                </div> <!-- single-line-name -->
+
+                <div aba="marcados" class="single-line-name">
+                    <div class="line-marcacao"></div> <!-- line-marcacao -->
+                    <p>Marcados</p>
+
+                </div> <!-- single-line-name -->
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </section>
+
+    <section id="publi">
+        <div class="container">
+            <div style="background-image: url(images/cisco-central.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/doguinho.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/guarda-chuva.jpg);" class="publi-single"></div>
+
+            <div class="clear"></div>
+
+            <div style="background-image: url(images/Terminal\ Wallpaper.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/Golden\ Ocean.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/Trees.jpg);" class="publi-single"></div>
+        </div>
+    </section>
+
+    <section id="reels">
+        <div class="container">
+
+            <div style="background-image: url(images/doguinho.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/guarda-chuva.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/cisco-central.jpg);" class="publi-single"></div>
+
+            <div class="clear"></div>
+
+            <div style="background-image: url(images/Terminal\ Wallpaper.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/Golden\ Ocean.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/Trees.jpg);" class="publi-single"></div>
+        </div>
+    </section>
+
+    <section id="videos">
+        <div class="container">
+
+            <div style="background-image: url(images/Terminal\ Wallpaper.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/Golden\ Ocean.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/Trees.jpg);" class="publi-single"></div>
+
+            <div class="clear"></div>
+
+            <div style="background-image: url(images/cisco-central.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/doguinho.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/guarda-chuva.jpg);" class="publi-single"></div>
+
+        </div>
+    </section>
+
+    <section id="marcados">
+        <div class="container">
+            <div style="background-image: url(images/doguinho.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/guarda-chuva.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/cisco-central.jpg);" class="publi-single"></div>
+
+            <div class="clear"></div>
+
+            <div style="background-image: url(images/Terminal\ Wallpaper.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/Golden\ Ocean.jpg);" class="publi-single"></div>
+            <div style="background-image: url(images/Trees.jpg);" class="publi-single"></div>
+        </div>
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
